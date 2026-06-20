@@ -1,0 +1,6 @@
+#系统提示词存放路径
+system_prompt_path: prompts/system.txt
+#rag总结提示词存放路径
+rag_summarize_prompt_path: prompts/rag_summarize.txt
+#报告提示词存放路径
+report_prompt_path: prompts/report.txt
