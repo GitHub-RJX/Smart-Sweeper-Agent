@@ -1,3 +1,6 @@
 /logs/
 .idea
 utils/__pycache__/
+factory/__pycache__/
+rag/chroma_vdb
+md5_str_store
