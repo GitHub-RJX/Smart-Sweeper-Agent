@@ -3,7 +3,7 @@
 """
 import hashlib
 import os
-from log_handler import LOGGER
+from utils.log_handler import LOGGER
 from langchain_core.documents import Document
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
 
@@ -50,7 +50,7 @@ def load_pdf(file_path: str, password: str = None) -> list[Document]:
     :param password: 文件密码（非必须）
     :return: 文件片段列表
     """
-    return PyPDFLoader(file_path, password).load()
+    return PyPDFLoader(file_path=file_path, password=password).load()
 
 
 def load_text(file_path: str) -> list[Document]:
@@ -59,4 +59,4 @@ def load_text(file_path: str) -> list[Document]:
     :param file_path: 文件路径
     :return: 文件片段列表
     """
-    return TextLoader(file_path).load()
+    return TextLoader(file_path=file_path, encoding='utf-8').load()

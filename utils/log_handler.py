@@ -1,7 +1,7 @@
 import logging
 import os
 
-from path_tool import get_file_abs_path
+from utils.path_tool import get_file_abs_path
 from datetime import datetime
 
 # 获取日志保存目录的绝对路径
@@ -48,7 +48,7 @@ def get_logger(name: str, console_level: int = logging.INFO, file_level: int = l
     return logger
 
 
-LOGGER = get_logger('Smart-Sweeper-Agent')
+LOGGER: logging.Logger = get_logger('Smart-Sweeper-Agent')
 
 if __name__ == '__main__':
     LOGGER.debug('调试日志')

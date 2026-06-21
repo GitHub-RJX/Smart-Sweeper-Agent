@@ -1,0 +1,13 @@
+persist_directory: chroma_vdb
+collection_name: agent
+
+chunk_size: 100
+chunk_overlap: 10
+separators: [ '\n', '\n\n', ',', '，', '.', '。', '!', '！', ' ', '' ]
+
+k: 3
+
+md5_str_store: md5_str_store
+
+resource_data_path: data
+allowed_types: [ '.txt', '.pdf' ]
